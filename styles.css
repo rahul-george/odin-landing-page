@@ -1,0 +1,55 @@
+* {
+  font-family: Roboto;
+}
+
+.hero-text-main {
+  font-size: 48px;
+  font-weight: 900;
+  color: #f9faf8;
+}
+
+.hero-text-secondary {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 16px;
+  gap: 8px;
+  margin: 0;
+}
+
+header,
+footer,
+.hero {
+  background-color: #1f2937;
+  display: flex;
+  align-items: center;
+  border: thin solid white;
+}
+
+footer {
+  justify-content: center;
+}
+
+header {
+  justify-content: space-between;
+}
+
+.hero {
+  justify-content: space-between;
+}
+
+.hero-image {
+  width: 500px;
+  height: 200px;
+  flex-shrink: 0;
+  border: thin solid white;
+}
+
+.hero-description {
+  width: 500px;
+  border: thin solid white;
+}
