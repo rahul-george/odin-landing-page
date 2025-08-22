@@ -1,33 +1,79 @@
+/* All common CSS directives */
 * {
   font-family: Roboto;
 }
 
-.hero-text-main {
-  font-size: 48px;
-  font-weight: 900;
-  color: #f9faf8;
+.primary {
+  color: #1f2937;
 }
 
-.hero-text-secondary {
-  font-size: 18px;
+.secondary {
   color: #e5e7eb;
+}
+
+.teritiary {
+  color: #3882f6;
+}
+
+.primary-bg {
+  background-color: #1f2937;
+}
+
+.secondary-bg {
+  background-color: #e5e7eb;
+}
+
+.teritiary-bg {
+  background-color: #3882f6;
+}
+
+.h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.h2 {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.b1 {
+  font-size: 36px;
+}
+
+.b2 {
+  font-size: 24px;
+}
+
+.b3 {
+  font-size: 18px;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.light {
+  font-weight: lighter;
+}
+
+.italic {
+  font-style: italic;
 }
 
 nav ul {
   display: flex;
   list-style-type: none;
   padding: 16px;
-  gap: 8px;
+  gap: 24px;
   margin: 0;
 }
 
 header,
 footer,
 .hero {
-  background-color: #1f2937;
   display: flex;
   align-items: center;
-  border: thin solid white;
 }
 
 footer {
@@ -40,6 +86,7 @@ header {
 
 .hero {
   justify-content: space-between;
+  height: 70vh;
 }
 
 .hero-image {
@@ -52,4 +99,86 @@ header {
 .hero-description {
   width: 500px;
   border: thin solid white;
+}
+
+/* All styling for info section */
+.info {
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.info-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  height: 150px;
+}
+
+.info-card-image {
+  height: 100px;
+  width: 100px;
+  border: 5px solid #3882f6;
+  border-radius: 10%;
+}
+
+/* testimonial section */
+
+.testimonials {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials-text {
+  width: 80vw;
+}
+
+.testimonials-cite {
+  justify-content: flex-end;
+  width: 80vw;
+}
+
+/* CTA */
+.cta {
+  height: 50vh;
+}
+
+.cta,
+.cta-card,
+.cta-card-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 5px solid #3882f6;
+}
+
+.cta-card {
+  width: 70vw;
+  padding: 48px;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+.cta-card-button {
+  border: thin solid #e5e7eb;
+  border-radius: 10px;
+  padding: 10px;
 }
