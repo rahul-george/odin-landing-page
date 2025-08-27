@@ -8,7 +8,7 @@
   --b1-font-size: 24px;
   --b2-font-size: 18px;
 
-  --width: 768px;
+  --width: 1024px;
 }
 
 body {
@@ -66,7 +66,7 @@ nav {
   background-color: var(--primary-color);
   color: var(--secondary-color);
 
-  height: 70vh;
+  height: 50vh;
 }
 
 .hero-area {
@@ -82,7 +82,7 @@ nav {
 
 .hero-description-area {
   flex: 1;
-  border: thin solid var(--secondary-color);
+  /* border: thin solid var(--secondary-color); */
 
   display: flex;
   flex-direction: column;
@@ -99,7 +99,7 @@ nav {
 
 .hero-image-area {
   flex: 1;
-  border: thin solid var(--secondary-color);
+  /* border: thin solid var(--secondary-color); */
 
   display: flex;
   justify-content: center;
@@ -116,7 +116,7 @@ nav {
 
   color: var(--primary-color);
 
-  height: 60vh;
+  height: 50vh;
   gap: 16px;
 }
 
@@ -159,7 +159,7 @@ nav {
 
   background-color: var(--secondary-color);
 
-  height: 60vh;
+  height: 50vh;
   gap: 16px;
 }
 
@@ -183,4 +183,58 @@ nav {
   justify-self: flex-end;
   font-size: var(--b2-font-size);
   font-weight: 900;
+}
+
+/* cta */
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+
+  /* Colors are set at section level */
+
+  color: var(--secondary-color);
+}
+
+.cta-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--tertiary-color);
+  border-radius: 10px;
+  padding: 36px 56px;
+
+  gap: 16px;
+}
+
+.cta-button {
+  background-color: var(--tertiary-color);
+  border-radius: 7px;
+  border-color: var(--secondary-color);
+  border-style: solid;
+  height: 30px;
+  width: 80px;
+  color: var(--secondary-color);
+}
+
+.cta-title {
+  font-size: var(--b2-font-size);
+  font-weight: 900;
+}
+
+.cta-description {
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Colors are set at section level */
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
