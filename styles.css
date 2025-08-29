@@ -16,6 +16,7 @@ body {
   flex-direction: column;
   font-family: Roboto;
   font-size: var(--b2-font-size);
+  min-width: 425px;;
 }
 
 header {
