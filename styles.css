@@ -222,6 +222,8 @@ nav {
   justify-content: center;
   height: 50vh;
 
+  padding: 5%;
+
   /* Colors are set at section level */
 
   color: var(--secondary-color);
