@@ -23,6 +23,8 @@ header {
   align-items: center;
   justify-content: center;
 
+  flex-grow: 0;
+
   /* Colors are set at section level */
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -61,12 +63,14 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-grow: 1;
+  padding: 5%;
 
   /* Colors are set at section level */
   background-color: var(--primary-color);
   color: var(--secondary-color);
 
-  height: 50vh;
+  /* height: 70vh; */
 }
 
 .hero-area {
@@ -106,6 +110,16 @@ nav {
   align-items: center;
 }
 
+.hero-image {
+  flex-shrink: 0;
+  /* max-height: 30vh;
+  max-width: 60vh; */
+
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 /* info section */
 
 .info {
@@ -114,10 +128,13 @@ nav {
   justify-content: center;
   align-items: center;
 
+  flex-grow: 1;
+
   color: var(--primary-color);
 
-  height: 50vh;
+  /* height: 80vh; */
   gap: 16px;
+  padding: 5%;
 }
 
 .info-title {
@@ -127,7 +144,7 @@ nav {
 .info-content {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   /* flex: 1; */
   gap: 24px;
 
@@ -143,10 +160,22 @@ nav {
 }
 
 .info-card-image {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border: thin solid var(--tertiary-color);
   border-radius: 10px;
+  overflow: hidden;
+}
+
+.info-card-image-class {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.info-card-text {
+  text-align: center;
+
 }
 
 /* Testimonial */
